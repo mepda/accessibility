@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Textbox Modal</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rammetto+One" rel="stylesheet">
+  <script defer src="script.js" charset="utf-8"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+<body>
+  <!-- TODO: fix taborder -->
+  <!-- TODO: create two new buttons withone of them disabled in the tab order
+             have the other button focus the disabled button when clicked-->
+  <!-- TODO: add a skip navigation link that is invisible until tabbed to -->
+  <nav>
+    <div class="nav-container">
+      <div class="icon">
+        <i class="fas fa-cube"></i>
+      </div>
+      <ul>
+        <a href="#">
+          <li>Home</li>
+        </a>
+        <a href="#">
+          <li>Profile</li>
+        </a>
+        <a href="#">
+          <li tabindex="1">Contact</li>
+        </a>
+        <a href="#">
+          <li>Logout</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <div class="content-container">
+    <div class="left-content">
+      <button tabindex="-1" onclick="showModal()" class="modal-button" id="modal-btn">
+        Click me for Modal to pop up
+      </button>
+    </div>
+    <div class="right-content">
+      <p>
+        Here's an example of a regular website. But wait! When you click
+        the button below, the whole screen is taken over! This is fine (well
+        maybe not 100% ideal) if you can see the screen, but for people operating
+        only with a keyboard, this could be problematic. How can we solve this?
+      </p>
+    </div>
+  </div>
+  <div class="modal" id="modalPop">
+    <!--close button -->
+    <span class="close">&times;</span>
+    <p> Modal Text amirite?</p>
+  </div>
+</body>
+</html>

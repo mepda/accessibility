@@ -1,0 +1,71 @@
+body{
+  margin: 0;
+  background-color: black;
+}
+
+.container{
+  margin-top: -12%;
+  width: 100%;
+}
+
+.c4{
+  width: 100%;
+}
+
+ .c2, .c3{
+  margin: 6% auto 6% auto;
+  width: 90%;
+}
+
+.c1, .c2, .c3{
+  height: 350px;
+
+}
+
+.c1{
+  background-color: #F57F17;
+  font-family: 'Oswald', sans-serif;
+  font-size: 15vw;
+  text-align: center;
+  vertical-align: baseline;
+  margin: 9vh auto 0 auto;
+  width: 90%;
+  line-height: 350px;
+}
+
+
+.c2{
+  background-color: #FBC02D;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4.5vw;
+}
+
+.c2 p {
+  padding: 16% 8% 0;
+}
+
+.c3{
+  background-color: #FFEB3B;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+
+.c3 .frame{
+  height: 320px;
+  margin: 0 auto;
+  width: 90%;
+  background-color: black;
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+
+.c3 .frame img{
+  width: 70%;
+  margin: 0 auto;
+}
+
+/* set breakpoints for 500px and 950px */

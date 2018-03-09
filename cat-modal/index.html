@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" href="imgs/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animate.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Rammetto+One" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <script defer src="script.js" charset="utf-8"></script>
+  <title>Catarific Pictures</title>
+</head>
+<body>
+  <h1 class="animated tada">What the cat ?!<i class="fas fa-paw"></i>
+
+</i>
+  </h1>
+  <div class="container" onclick="setImg()">
+    <!-- TODO: set tabindex of all of the images-->
+    <!-- TODO: allow for keyboard enter to start that cats modal-->
+    <!-- TODO: add another media query to make site look good on tablets -->
+    <!-- TODO: (optional) change image tags to picture tags (this might take sometime)-->
+    <!-- TODO: (optional) Set alt text to http://api.icndb.com/jokes/random using the fetch api-->
+    <div class="rectangle"><img id="cat1" class="cat" src="imgs/cat.jpg" alt="cat looking at you with a smile"></div>
+    <div class="rectangle"><img id="cat2" class="cat" src="imgs/cat1.jpg" alt="little black and grey kitten on a pillow"></div>
+    <div class="rectangle"><img id="cat3" class="cat" src="imgs/cat2.jpg" alt="small grey and brown kitten on the grass"></div>
+    <div class="rectangle"><img id="cat4" class="cat" src="imgs/cat3.jpg" alt="cat sandwiched between cushions on a couch"></div>
+    <div class="rectangle"><img id="cat5" class="cat" src="imgs/catlarge.jpg" alt="tabby cat posing"></div>
+    <div class="rectangle"><img id="cat6" class="cat" src="imgs/cat300x300.jpg" alt="cartoon cat eating a rice ball"></div>
+  </div>
+  <div class="modal" id="modalPop">
+    <!--close button -->
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-image">
+    <div id="caption"></div>
+  </div>
+</body>
+</html>
